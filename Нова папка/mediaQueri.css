@@ -1,5 +1,60 @@
-@media screen and (min-width: 800px) {
-
-	
-        
+@media screen and (max-width: 500px) {
+    section{
+        padding-top: 30vh;
+        display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     }
+      article{
+        height: 30vh;
+    }
+      header{
+       height: 20vh;
+       font-size: 12px;
+   }
+   h1{
+       height: 10vh;
+   }
+   #logo{
+  
+      background-size: 100% 100%;
+      height: 20vh;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      animation: slidein 1s ease;
+      
+  }
+  #front1{
+  
+      background-size: 100% 100%;
+      height: 20vh;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: -1;
+      animation: slidein 3s ease 2s;
+  }
+  #logo2{
+  
+      background-size: 100% 100%;
+      height: 20vh;
+      grid-row-start: 4;
+      grid-row-end: 7;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      animation: slidein 2s ease;
+      
+  }
+  #front2{
+      
+      background-size: 100% 100%;
+      height: 20vh;
+      grid-row-start: 6;
+      grid-row-end: 9;
+      grid-column-start: 3;
+      grid-column-end: -1;
+      animation: slidein 3s ease 2s;
+  }
+  }

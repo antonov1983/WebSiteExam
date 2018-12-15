@@ -1,8 +1,21 @@
 @import url('https://fonts.google.com/specimen/Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@keyframes slidein{
+
+	from{
+		transform:translateX(20rem);
+		
+	}
+	to {
+		transfor:translateX(0);
+		
+	}
+
+}
 body{
     font-family: "Open sans", sans-serif;
- 
+	padding: 0;
+	margin: 0;
 }
 div{
 	height: 10vh;
@@ -70,27 +83,52 @@ header nav ul li a:hover {
 	transform: translateY(-0.25rem);
    
 }
-.first{
+section{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-	
-	
-	
-
+	gap: 1px;
+			
 }
-@media screen and (max-width: 500px) {
-  section{
-	  padding-top: 30vh;
-  }
-	article{
-	  height: 30vh;
-  }
-	header{
-	 height: 20vh;
-	 font-size: 12px;
- }
- h1{
-	 height: 10vh;
- }
+#logo{
+	background: url('logo.png');
+	background-size: 100% 100%;
+	height: 30vh;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	animation: slidein 1s ease;
+	
+}
+#front1{
+	background: url('location1.png');
+	background-size: 100% 100%;
+	height: 30vh;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	grid-column-start: 3;
+	grid-column-end: -1;
+	animation: slidein 1s ease 2s;
+}
+#logo2{
+	background: url('logo.png');
+	background-size: 100% 100%;
+	height: 30vh;
+	grid-row-start: 5;
+	grid-row-end: 9;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	animation: slidein 2s ease;
+	
+}
+#front2{
+	background: url('location1.png');
+	background-size: 100% 100%;
+	height: 30vh;
+	grid-row-start: 6;
+	grid-row-end: 9;
+	grid-column-start: 3;
+	grid-column-end: -1;
+	animation: slidein 2s ease 2s;
 }
