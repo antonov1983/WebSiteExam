@@ -1,3 +1,7 @@
+:root{
+
+	 --about-size:7;
+}
 @import url('https://fonts.google.com/specimen/Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
 @keyframes slidein{
@@ -75,12 +79,13 @@ header nav ul li a {
 	box-shadow: 0 0 5rem 0.1rem rgba(3, 100, 0, 0.15);
 }
 
-header nav ul li a:focus,
-header nav ul li a:hover {
+ a:focus,
+ a:hover {
 	outline: none;
 	background: #090;
 	color: #FFF;
 	transform: translateY(-0.25rem);
+	cursor: pointer;
    
 }
 section{
@@ -89,6 +94,18 @@ section{
 	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 	gap: 1px;
 			
+}
+#about2{
+	grid-row-start: 5;
+	grid-row-end: 5;
+	grid-column-start: 3;
+	grid-column-end:  7;
+}
+#about1{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 3;
+	grid-column-end:7;;
 }
 #logo{
 	background: url('logo.png');
@@ -131,4 +148,34 @@ section{
 	grid-column-start: 3;
 	grid-column-end: -1;
 	animation: slidein 2s ease 2s;
+}
+#detail1{
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+#location1{
+	background: url('location1.png');
+	background-size: 100% 100%;
+	height: 30vh;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	
+}
+#detail2{
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 6;
+	grid-row-end: 6;
+}
+#location2{
+	background: url('location2.png');
+	background-size: 100% 100%;
+	height: 60vh;
+	grid-row-start: 3;
+	grid-row-end: 9;
+	grid-column-start: 6;
+	grid-column-end: -1;
+	
 }
