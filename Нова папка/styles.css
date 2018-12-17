@@ -23,7 +23,7 @@ body{
 }
 div{
 	height: 10vh;
-	background:red;
+	background:white;
 	text-align:center;
 	vertical-align: text-bottom;
 	font-size: 1.8rem;
@@ -146,6 +146,7 @@ section{
 #detail1{
 	grid-column-start: 1;
 	grid-column-end: -1;
+	font-size: 12px;
 }
 #location1{
 	background: url('location1.png');
@@ -162,6 +163,8 @@ section{
 	grid-column-end: 6;
 	grid-row-start: 6;
 	grid-row-end: 6;
+	font-size: 12px;
+	text-align: right;
 }
 #location2{
 	background: url('location2.png');
@@ -272,4 +275,9 @@ section{
 	grid-row-end: 9;
 	grid-column-start:2;
 	grid-column-end: 7;
+}
+p{
+	padding:2px;
+	margin: 0;
+	font-size: 12px;
 }
