@@ -276,7 +276,7 @@ section{
 	grid-column-start:2;
 	grid-column-end: 7;
 }
-p{
+section p{
 	padding:2px;
 	margin: 0;
 	font-size: 12px;
